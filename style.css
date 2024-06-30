@@ -83,6 +83,18 @@ button#view-results {
   cursor: pointer;
 }
 
+button#clear-data {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+
 section#description {
   width: 100%;
   padding: 1rem;

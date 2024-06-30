@@ -1,14 +1,14 @@
 # odd-duck
 
-## Class-09 - Lab: Form Addition 
+## Class-13 
 
 ### Links and Resources
 
-* [submission PR](https://github.com/Jnez405/odd-duck/tree/class12-dataviz)
+* [submission PR](https://github.com/Jnez405/odd-duck/tree/class13-dataPp)
 
 ### Lighthouse Accessibility Report Score
 
-![Home Page](https://raw.githubusercontent.com/Jnez405/odd-duck/main/img/SSODC12.png)
+![Home Page](https://raw.githubusercontent.com/Jnez405/odd-duck/main/img/SSODC13.png)
  
 
 ### Author: Jesus O.
