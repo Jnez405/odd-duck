@@ -1,10 +1,24 @@
-// Placeholder product data
+// Updated product data with correct paths
 const productData = [
-    { name: 'product1', imgPath: 'https://via.placeholder.com/140' },
-    { name: 'product2', imgPath: 'https://via.placeholder.com/120' },
-    { name: 'product3', imgPath: 'https://via.placeholder.com/100' },
-    { name: 'product4', imgPath: 'https://via.placeholder.com/80' },
-    { name: 'product5', imgPath: 'https://via.placeholder.com/60' }
+    { name: 'cthulhu', imgPath: 'img/cthulhu.jpg' },
+    { name: 'dog-duck', imgPath: 'img/dog-duck.jpg' },
+    { name: 'dragon', imgPath: 'img/dragon.jpg' },
+    { name: 'pen', imgPath: 'img/pen.jpg' },
+    { name: 'pet-sweep', imgPath: 'img/pet-sweep.jpg' },
+    { name: 'sweep', imgPath: 'img/sweep.png' },
+    { name: 'tauntaun', imgPath: 'img/tauntaun.jpg' },
+    { name: 'unicorn', imgPath: 'img/unicorn.jpg' },
+    { name: 'water-can', imgPath: 'img/water-can.jpg' },
+    { name: 'wine-glass', imgPath: 'img/wine-glass.jpg' },
+    { name: 'bag', imgPath: 'img/bag.jpg' },
+    { name: 'banana', imgPath: 'img/banana.jpg' },
+    { name: 'bathroom', imgPath: 'img/bathroom.jpg' },
+    { name: 'boots', imgPath: 'img/boots.jpg' },
+    { name: 'breakfast', imgPath: 'img/breakfast.jpg' },
+    { name: 'bubblegum', imgPath: 'img/bubblegum.jpg' },
+    { name: 'chair', imgPath: 'img/chair.jpg' },
+    { name: 'scissors', imgPath: 'img/scissors.jpg' },
+    { name: 'shark', imgPath: 'img/shark.jpg' }
   ];
   
   const products = [];
