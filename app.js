@@ -35,8 +35,23 @@ function Product(name, imgPath) {
   products.push(this);
 }
 
-// Initialize products
-productData.forEach(data => new Product(data.name, data.imgPath));
+// Check if products exist in local storage
+if (localStorage.getItem('products')) {
+  const storedProducts = JSON.parse(localStorage.getItem('products'));
+  storedProducts.forEach(data => {
+    const product = new Product(data.name, data.imgPath);
+    product.timesShown = data.timesShown;
+    product.timesClicked = data.timesClicked;
+  });
+} else {
+  // Initialize products
+  productData.forEach(data => new Product(data.name, data.imgPath));
+}
+
+// Store products in local storage
+function storeProducts() {
+  localStorage.setItem('products', JSON.stringify(products));
+}
 
 // Randomly generate three unique products
 function getRandomProducts() {
@@ -74,6 +89,7 @@ function handleClick(event) {
     const clickedProduct = products.find(product => product.name === clickedProductName);
     clickedProduct.timesClicked++;
     currentRounds--;
+    storeProducts(); // Save state after each click
     if (currentRounds > 0) {
       displayProducts();
     } else {
@@ -136,6 +152,10 @@ function renderChart() {
 // Initialize app
 document.querySelector('.image-container').addEventListener('click', handleClick);
 document.getElementById('view-results').addEventListener('click', displayResults);
+document.getElementById('clear-data').addEventListener('click', () => {
+  localStorage.removeItem('products');
+  location.reload();
+});
 
 // Display initial products
 displayProducts();
